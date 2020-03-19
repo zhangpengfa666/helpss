@@ -1,2 +1,3 @@
 var a = 'dfdfads';
-console.log('....', a);
+var b = '5555';
+console.log('....', a, b);
