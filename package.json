@@ -3,12 +3,10 @@
   "version": "1.0.0",
   "description": "pre-commit husky",
   "main": "test.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "husky": {
     "hooks": {
-      "pre-commit": "standard \"src/**/*.{js, vue, wpy}\" | snazzy"
+      "pre-commit": "eslint \"src/**/*.{js,vue,wpy}\""
     }
   },
   "repository": {
@@ -28,6 +26,7 @@
   },
   "homepage": "https://github.com/gauseen/pre-commit#readme",
   "devDependencies": {
+    "eslint": "^6.8.0",
     "husky": "^0.15.0-rc.8",
     "snazzy": "^7.1.1",
     "standard": "^11.0.0"
